@@ -242,14 +242,18 @@ footer a:hover {
     left: 50%;
     transform: translateX(-50%);
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
+    width: 50px;
+    background-color: #333;
+    box-shadow: 0 4px 0 8px #ccc;
 }
 
 .social-bubbles a {
+    color: white;
     display: block;
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
 }
 
 .social-bubbles img {
@@ -281,16 +285,6 @@ footer a:hover {
     margin-top: 10px;
 }
 
-.social-icons a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 24px;
-}
-
-.social-icons a:hover {
-    color: #ffeb3b;
-}
 
 /* Media Queries pour les petits écrans */
 @media (max-width: 768px) {
