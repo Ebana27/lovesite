@@ -43,7 +43,7 @@ function usePasseCard() {
 
 function shareOnWhatsApp() {
     if (currentQuestion) {
-        const url = "https://api.whatsapp.com/send?text=" + encodeURIComponent("Love or Friendship - Question : " + currentQuestion);
+        const url = "https://api.whatsapp.com/send?text=" + encodeURIComponent("*Love or Friendship* - Question : " + currentQuestion);
         window.open(url, '_blank');
     } else {
         alert("Veuillez d'abord tirer une question !");
