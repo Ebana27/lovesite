@@ -87,3 +87,19 @@ function sendToEmail(responseText) {
     window.location.href = mailtoLink;
 }
 
+// JavaScript pour afficher/masquer les réseaux sociaux au clic sur mobile
+document.addEventListener("DOMContentLoaded", function() {
+    const companies = document.querySelectorAll('.company');
+    
+    companies.forEach(company => {
+      company.addEventListener('click', function() {
+        const links = this.querySelector('.social-links');
+        if (links.style.display === "block") {
+          links.style.display = "none";
+        } else {
+          links.style.display = "block";
+        }
+      });
+    });
+  });
+  
