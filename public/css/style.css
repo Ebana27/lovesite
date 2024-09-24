@@ -18,9 +18,28 @@ body {
     justify-content: space-between;
     min-height: 100vh;
     margin: 0;
-    background-image: url("./priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 400% 400%;
+    background-image : dégradé linéaire ( 242 degrés , #dc3fff, #ff843f);
+    -webkit-animation : backnow 34s facilité infinie ;
+    -moz-animation : backnow 34s de facilité infinie ;
+    animation : backnow 34s de facilité infinie ;
+}
+
+@-webkit-keyframes backnow {
+    0%{ background-position  : 0% 19% }
+    50%{ background-position  : 100% 82% }
+    100%{ background-position  : 0% 19% }
+}
+@-moz-keyframes backnow {
+    0%{ background-position  : 0% 19% }
+    50%{ background-position  : 100% 82% }
+    100%{ background-position  : 0% 19% }
+}
+@keyframes backnow {
+    0%{ background-position  : 0% 19% }
+    50%{ background-position  : 100% 82% }
+    100%{ background-position  : 0% 19% }
 }
 
 .All-content {
