@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html, body {
@@ -9,7 +10,7 @@ html, body {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
     color: #333;
     display: flex;
