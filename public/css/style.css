@@ -242,11 +242,11 @@ footer a:hover {
     left: 50%;
     transform: translateX(-50%);
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     width: 50px;
     background-color: #333;
-    box-shadow: 0 2px 12px 2px #ccc;
+    box-shadow: 0 2px 12px 2px #cccccc8f;
     border-radius: 50px;
 }
 
@@ -255,6 +255,7 @@ footer a:hover {
     display: block;
     width: 60px;
     height: 60px;
+    margin: 0;
 }
 
 .social-bubbles img {
