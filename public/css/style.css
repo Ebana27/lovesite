@@ -133,6 +133,7 @@ textarea {
     font-size: 1.2em;
 }
 
+/* Structure de base du footer */
 footer {
     background-color: #222;
     color: #ddd;
@@ -141,8 +142,17 @@ footer {
     text-align: center;
     font-size: 1em;
     margin: 0;
-    margin-top: 40px;
-    letter-spacing: 0.5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
 }
 
 footer a {
@@ -154,68 +164,90 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.logo-container {
+/* Logos et bulles de réseaux sociaux */
+.logos {
     display: flex;
     gap: 40px;
-  }
-  
-  .company {
+}
+
+.logo-item {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 100px;
-    height: auto;
+    display: inline-block;
+}
+
+.logo-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s ease;
-  }
-  
-  .logo:hover {
+}
+
+.logo-item:hover img {
     transform: scale(1.1);
-  }
-  
-  /* Bulles de réseaux sociaux */
-  .social-links {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
+}
+
+/* Bulles avec icônes des réseaux sociaux */
+.social-bubbles {
     display: none;
     position: absolute;
-    top: 120%;
+    bottom: 60px; /* Les bulles apparaissent vers le haut */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
-    border-radius: 10px;
-    padding: 10px;
-  }
-  
-  .social-links li {
-    margin: 5px 0;
-  }
-  
-  .social-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .social-links a:hover {
-    color: #4ecdc4;
-  }
-  
-  /* Animation sur survol (pour desktop) */
-  .company:hover .social-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-bubbles a {
     display: block;
-  }
-  
-  /* Mobile behavior: show on click */
-  @media only screen and (max-width: 768px) {
-    .company .social-links {
-      display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.social-bubbles img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Affiche les bulles au survol ou au clic */
+.logo-item:hover .social-bubbles,
+.logo-item:active .social-bubbles {
+    display: flex;
+}
+
+/* Transition fluide pour les bulles */
+.social-bubbles a {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.logo-item:hover .social-bubbles a,
+.logo-item:active .social-bubbles a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media Queries pour les petits écrans */
+@media (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+        gap: 20px;
     }
-  }
+}
+
+@media (max-width: 480px) {
+    .logo-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-bubbles {
+        bottom: 50px;
+    }
+}
 
 /* Media Queries pour Responsivité */
 @media (max-width: 768px) {
