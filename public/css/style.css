@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color:rgba(255, 255, 255, 0.95);
 }
 
 html, body {
@@ -17,6 +18,7 @@ body {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
+    backdrop-filter: blur(27px);
     margin: 0;
     background-image: url("./priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg");
     background-repeat: no-repeat;
