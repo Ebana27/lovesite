@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love or Friendship - Jeu de Questions</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/img/icon/favicon.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Love or Friendship <span class="heart">❤️</span></h1>
+        <p>Cliquez sur le bouton pour obtenir une question :</p>
+
+        <div class="button-group">
+            <button onclick="getRandomQuestion()">Tirer une question</button>
+            <button onclick="usePasseCard()">Utiliser une Passe Card (<span id="passeCardCount">2</span> restantes)</button>
+            <button id="shareBtn" onclick="shareOnWhatsApp()">
+                <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="..."/>
+                </svg>
+                Partager sur WhatsApp
+            </button>
+        </div>
+
+        <div id="question">Les questions apparaîtront ici...</div>
+    </div>
+
+    <div class="response-section">
+        <p>Laissez nous un commentaire</p>
+        <textarea id="response" rows="4" cols="50" placeholder="Entrez votre réponse ici..."></textarea>
+        
+        <!-- Choix de méthode de contact -->
+        <p>Comment souhaitez-vous être contacté ?</p>
+        <input type="radio" id="whatsapp" name="contactMethod" value="whatsapp" checked>
+        <label for="whatsapp">WhatsApp</label>
+        <input type="radio" id="email" name="contactMethod" value="email">
+        <label for="email">Email</label>
+
+        <button onclick="submitResponse()">Soumettre la réponse</button>
+    </div>
+
+    <!-- <footer>
+        Créé par Ebana Fidel Plamedi | <a href="mailto:ebanaplamedy@gmail.com">contact me</a>
+    </footer> -->
+
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
