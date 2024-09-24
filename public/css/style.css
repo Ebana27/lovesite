@@ -249,6 +249,21 @@ footer a:hover {
     transform: translateY(0);
 }
 
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+}
+
 /* Media Queries pour les petits écrans */
 @media (max-width: 768px) {
     footer .footer-content {
