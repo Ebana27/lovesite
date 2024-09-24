@@ -20,6 +20,11 @@ body {
     margin: 0;
 }
 
+.All-content {
+    margin: 15px;
+    padding: 5px;
+}
+
 .container {
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
