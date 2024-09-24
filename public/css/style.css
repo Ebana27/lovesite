@@ -190,6 +190,8 @@ footer {
     left: 0;
     right: 0;
     margin-top: auto;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 footer .footer-content {
