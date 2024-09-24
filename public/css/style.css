@@ -50,9 +50,8 @@ button {
     background-color: #4ecdc4;
     color: white;
     border: none;
-    padding: 15px 25px;
     font-size: 1.1em;
-    border-radius: 40px;
+    border-radius: 12px;
     cursor: pointer;
     transition: background-color 0.4s, transform 0.1s;
     display: flex;
