@@ -11,6 +11,7 @@ html, body {
 
 body {
     font-family: 'Roboto', sans-serif;
+    backdrop-filter: blur(10px); 
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,27 +21,6 @@ body {
     background: url('https://images.unsplash.com/photo-1527430253228-e93688616381?ixlib=rb-4.0.3&auto=format&fit=crop&w=1650&q=80') no-repeat center center fixed;
     background-size: cover;
 }
-
-.backdrop-container {
-    width: 80%;
-    height: 80vh;
-    background: rgba(255, 255, 255, 0.2); /* Fond translucide */
-    border-radius: 15px;
-    backdrop-filter: blur(10px); /* Flou de l'arrière-plan */
-    -webkit-backdrop-filter: blur(10px); /* Support pour les navigateurs WebKit */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.backdrop-container p {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
 
 .All-content {
     margin: 15px;
