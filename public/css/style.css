@@ -219,14 +219,14 @@ footer a:hover {
     left: 50%;
     transform: translateX(-50%);
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 }
 
 .social-bubbles a {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
 }
 
 .social-bubbles img {
