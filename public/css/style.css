@@ -154,6 +154,69 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.logo-container {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .company {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Bulles de réseaux sociaux */
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .social-links li {
+    margin: 5px 0;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #4ecdc4;
+  }
+  
+  /* Animation sur survol (pour desktop) */
+  .company:hover .social-links {
+    display: block;
+  }
+  
+  /* Mobile behavior: show on click */
+  @media only screen and (max-width: 768px) {
+    .company .social-links {
+      display: none;
+    }
+  }
+
 /* Media Queries pour Responsivité */
 @media (max-width: 768px) {
     h1 {
